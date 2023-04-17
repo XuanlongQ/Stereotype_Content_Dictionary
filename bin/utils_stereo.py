@@ -49,11 +49,7 @@ def build_dimensions(anti_pairs):
             # da[rp_word_0] = rp_word_vec_0 - rp_word_vec_1
         except Exception as err:
             print("something wrong, the err is{}".format(err))
-    
-    # import pandas as pd        
-    # df = pd.DataFrame(da)
-    # d = df.T
-    # d.to_csv('sample_competent.csv')
+
     
     dim_ave = np.nanmean(word_dims,axis=0)
     dim_ave_n = normalize_vector(dim_ave)
@@ -119,11 +115,11 @@ def get_seed_words():
     cols_competent = ['Dictionary','term','Dir','Competence_dict_hi','Competence_dict_lo']
     
     
-    df.to_csv('test_warm.csv',columns = cols_warmth)
-    df.to_csv('test_competent.csv',columns = cols_competent)
+    df.to_csv('stereotype/data/experiment_data/test_warm.csv',columns = cols_warmth)
+    df.to_csv('stereotype/data/experiment_data/test_competent.csv',columns = cols_competent)
             
 def get_words():
-    path = 'test_competent.csv'
+    path = 'stereotype/data/experiment_data/test_competent.csv'
     import csv
     with open(path,'r') as f:
         reader = csv.reader(f)

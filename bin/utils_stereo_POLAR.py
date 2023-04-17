@@ -115,11 +115,11 @@ def get_seed_words():
     cols_competent = ['Dictionary','term','Dir','Competence_dict_hi','Competence_dict_lo']
     
     
-    df.to_csv('test_warm.csv',columns = cols_warmth)
-    df.to_csv('test_competent.csv',columns = cols_competent)
+    df.to_csv('stereotype/data/experiment_data/test_warm.csv',columns = cols_warmth)
+    df.to_csv('stereotype/data/experiment_data/test_competent.csv',columns = cols_competent)
             
 def get_words():
-    path = 'test_competent.csv'
+    path = 'stereotype/data/experiment_data/test_competent.csv'
     import csv
     with open(path,'r') as f:
         reader = csv.reader(f)

@@ -77,6 +77,7 @@ def draw_pic(groups):
 if __name__ == '__main__':
     # groups = find_groups()   
     # 'high-strung','good natured' had lost 
+    # all 64 personality traits.(actual 59)
     groups = ['determined', 'practical', 'industrious', 'intelligent', 'unintelligent', 'skillful', 'clumsy', 'cautious', 
               'impulsive', 'warm', 'cold', 'irritable',  'humorous', 'humorless', 'sociable', 'unsociable',
               'popular', 'unpopular', 'happy', 'unhappy', 'imaginative', 'unimaginative', 'reliable', 'unreliable', 'honest',
@@ -84,8 +85,9 @@ if __name__ == '__main__':
               'serious', 'frivolous', 'vain', 'modest', 'submissive', 'irresponsible', 'sincere', 'helpful', 'sentimental',
               'naive', 'scientific', 'discriminating', 'squeamish', 'daring', 'superficial', 'moody', 'pessimistic', 'wasteful', 
               'stern', 'finicky', 'artistic', 'meditative', 'dominating', 'boring', 'reserved']
-    #'inventive','liar','egotistical'
     
+    #'inventive','liar','egotistical'
+    # all 64 personality traits excluding ambiguous stereotype.(actual 39)
     groups_boarder = ['practical', 'industrious', 'intelligent', 'unintelligent', 'skillful', 'clumsy', 'cautious', 
               'impulsive', 'warm', 'cold',  'humorous', 'humorless', 'sociable', 'unsociable',
               'popular', 'happy',  'imaginative', 'unimaginative', 'reliable', 'unreliable', 
@@ -93,7 +95,6 @@ if __name__ == '__main__':
               'serious',  'modest', 'irresponsible', 'sincere', 'helpful', 'sentimental',
               'squeamish',  'superficial',  'wasteful', 
                'artistic', 'meditative', 'dominating', 'boring', 'unpopular']
-    # 'inventive','liar','egotistical',
     # draw_pic(groups)
     print(len(groups),len(groups_boarder))
     scm_map = get_dimensions(groups_boarder)

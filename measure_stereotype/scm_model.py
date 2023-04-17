@@ -11,7 +11,7 @@ def scm_semantic(search_val):
     """
     
     # SCM_model = 'css_word_embedding/stereotype/data/semantic_stereotype/POLAR_embedding_final.bin'
-    # SCM_model = 'css_word_embedding/stereotype/data/semantic_stereotype/SD_embedding_final.bin'
+    # SCM_model = 'css_word_embedding/stereotype/data/semantic_stereotype/SD_embedding_final.bin' # ingore it
     SCM_model = 'css_word_embedding/stereotype/data/semantic_stereotype/SCM_embedding_final.bin'
     with open(SCM_model,'r') as f:
         # next(f)

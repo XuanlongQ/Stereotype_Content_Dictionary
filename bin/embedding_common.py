@@ -59,8 +59,7 @@ def new_semantic(dim):
     for each_word in vocab_list:
         new_vector = np.matmul(curr_antonmy_vector,model[each_word])
         new_vector = new_vector/np.linalg.norm(new_vector)
-        with open('css_word_embedding/stereotype/data/semantic_stereotype/SCM_embedding_final_0.5.bin','a+',encoding='utf-8') as f:
-        # with open('css_word_embedding/stereotype/data/semantic_stereotype/POLAR_embedding_final.bin','a+',encoding='utf-8') as f:
+        with open('css_word_embedding/stereotype/data/semantic_stereotype/SCM_embedding_final.bin','a+',encoding='utf-8') as f:
             f.write(each_word + ',' + str(new_vector[0]) + ',' + str(new_vector[1]) + '\n')
             f.close()
         
