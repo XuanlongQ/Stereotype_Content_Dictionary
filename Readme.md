@@ -1,6 +1,6 @@
 ## Stereotype Content Dictionary: A semantic space of 3 million words and phrases using Google News word2vec embeddings
 
-*Note: This readme for how to constructing a Stereotype Content Dictionary based on word embeddings, more detail please refer to the paper.*
+* Note: This readme for how to constructing a Stereotype Content Dictionary based on word embeddings, more detail please refer to the paper. *
 
 Before we start the project,there are some preparation and concepts need to clarify. please follow this guideline
 
@@ -17,8 +17,9 @@ pip install -r requirements.txt
 #### 2.1 Folder
 bin : constructing Stereotype Content Dictionary by semantic differences
 - SCM and POLAR is seperated.
-measure_stereotypr: test Stereotype Content Dictionary
-- SCM and POLAR is seperated.
+- measure_stereotype: test Stereotype Content Dictionary
+- measure_stereotype_POLAR: test POLAR framework
+
 
 #### 2.2 Data
 
@@ -33,12 +34,12 @@ verification
 - 64 commonly used personality traits
 
 experiment data
-- filter words from Fiske's dictionaries for build pairs
+- filter words from Fiske's dictionaries for building pairs
 
 
 ### Code part
 #### 1. Build Stereotype Content Dictionary
-*NOTE: Detail interpretation please check the code, this is a rough illustration *
+* NOTE: Detail interpretation please check the code, this is a rough illustration *
 
 SCM's main code is main_stereo.py, run this file you could get a semantic space of stereotype content with two dimensions.
 
