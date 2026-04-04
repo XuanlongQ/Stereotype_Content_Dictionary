@@ -1,8 +1,22 @@
-## Stereotype Content Dictionary: A semantic space of 3 million words and phrases using Google News word2vec embeddings
+## 📌 Overview
 
-* Note: This readme for how to constructing a Stereotype Content Dictionary based on word embeddings, more detail please refer to the paper. *
+This project is the official implementation of:
 
-Before we start the project,there are some preparation and concepts need to clarify. please follow this guideline
+> **Stereotype Content Dictionary: A semantic space of 3 million words and phrases using Google News word2vec embeddings**  
+> Xuanlong QIN & Tony Tam  
+> SBP-BRiMS, 2023
+
+Paper link: [Conference Proceeding](https://link.springer.com/chapter/10.1007/978-3-031-43129-6_2)
+
+**Primary Maintainer:** Xuanlong QIN
+
+This repository contains the code, experiments, and instructions to reproduce the results presented in the paper.
+
+---
+
+
+## Replication 
+Before you start the project,there are some concepts need to be clarified. 
 
 ### 1. Preparation
 
@@ -13,7 +27,7 @@ Before we start the project,there are some preparation and concepts need to clar
 pip install -r requirements.txt
 ```
 
-### 2. Introduction of the structure of my project
+### 2. Introduction of the structure of this project
 #### 2.1 Folder
 bin : constructing Stereotype Content Dictionary by semantic differences
 - SCM and POLAR is seperated.
@@ -23,48 +37,48 @@ bin : constructing Stereotype Content Dictionary by semantic differences
 
 #### 2.2 Data
 
-antonmy: opposite pairs of POLAR and SCM model
+Antonmy: opposite pairs of POLAR and SCM model
 - POLAR has 4 files
 - SCM has 2 files(pair opposite dimensions)
 
-dictinoaries: Fiske's Stereotype Content Dictionary
-- it has 2 files, one for Full dicionaries(14,000 words),another for seed dicionaries.
+Dictionaries: Fiske's Stereotype Content Dictionary
+- It has 2 files, one for full dicionaries(14,000 words),amd another for seed dicionaries.
 
-verification
-- 64 commonly used personality traits
+Verification 
+- 64 commonly used personality traits (Rosenberg et al.,1968)
 
-experiment data
-- filter words from Fiske's dictionaries for building pairs
+Experiment data
+- Seed words from Fiske's dictionaries for building pairs
 
 
-### Code part
+### 3. Code part
 #### 1. Build Stereotype Content Dictionary
-* NOTE: Detail interpretation please check the code, this is a rough illustration *
+SCM's main code is `main_stereo.py` file; When you run this file you could get a semantic space of stereotype content with two dimensions.
 
-SCM's main code is main_stereo.py, run this file you could get a semantic space of stereotype content with two dimensions.
-
-POLAR's main code is main_stereo_POLAR.py, run this file you could get a semantic space of stereotype content with two dimensions.
+POLAR's main code is `main_stereo_POLAR.py` file, run this file you could get a semantic space of stereotype content with two dimensions.
 
 Note:
-- utils_stero.py and utils_stero_POLAR.py both have get_seed_words() and get_words(), these two functions are independent function, you could see there is no input.
-- these two function is used to filter word from Fiske's dictionaries for building pairs.
+- `utils_stero.py` and `utils_stero_POLAR.py` both have `get_seed_words()` and `get_words()`, these two functions are independent functions, you can see there is no input.
+- These two functions are basically used to filter word from Fiske's dictionaries for building pairs.
 
-#### 2. Model verifivation
+#### 2. Model validation
 SCM_graph.py: find the categories of different words(SCM_MAP).
-- you need to replace different word embeddings
+- you need to replace paths with different word embeddings
 
 NOTE:
-- groups: all 64 personality traits.(actual 59)
-- groups_boarder: all 64 personality traits excluding ambiguous stereotype.(actual 39)
+- groups: all 64 personality traits(actual 59).
+- groups_boarder: all 64 personality traits excluding ambiguous stereotype(actual 39).
 
 test_roubustness.py:
 - test the accuracy, replace SCM_MAP
 
-### Result
-For other research replicate this word more easily, i have uploaded Stereotype Content Dictionary to Harvard dataverse.
+### 4. Result
+For other research replicate this word more easily, We have uploaded Stereotype Content Dictionary to Harvard dataverse.
+
 Dataset will be publised after this paper has been accepted.
 
 Citation format as follows:
+
 ```
 @data{DVN/OUXIYW_2023,
 author = {qin, xuanlong},
@@ -76,8 +90,6 @@ doi = {10.7910/DVN/OUXIYW},
 url = {https://doi.org/10.7910/DVN/OUXIYW}
 }
 ```
-
-**Please feel free to contact me**
 
 
 
