@@ -12,6 +12,22 @@ Paper link: [Conference Proceeding](https://link.springer.com/chapter/10.1007/97
 
 This repository contains the code, experiments, and instructions to reproduce the results presented in the paper.
 
+🌟 **I would also recommend you to read the relevant papers on this project.**
+
+> **Embedding Social Perception Dimensions in a Semantic Space: Toward a Quantitative Synthesis**  
+> Xuanlong QIN, Tony TAM 
+> Journal of Social Computing, 2025
+
+Paper link: [link](https://www.sciopen.com/article/10.23919/JSC.2025.0010)
+
+and paper
+
+> **Computational Evidence for the Two-Dimensional Structure of Social Evaluation: Pandemic-Era Insights From Americans’ Perceptions of Chinese and Japanese on Twitter**  
+> Xuanlong QIN, Tony TAM 
+> Social Science Computer Review, 2025
+
+Paper link: [link](https://journals.sagepub.com/doi/10.1177/08944393261437640)
+
 ---
 
 
