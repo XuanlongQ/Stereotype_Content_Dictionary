@@ -18,7 +18,7 @@ This repository contains the code, experiments, and instructions to reproduce th
 > Xuanlong QIN, Tony TAM 
 > Journal of Social Computing, 2025
 
-Paper link: [link](https://www.sciopen.com/article/10.23919/JSC.2025.0010)
+Paper link: [link](https://www.sciopen.com/article/10.23919/JSC.2025.0010); Repo link: [link](https://github.com/XuanlongQ/Integrating_SCM_SD)
 
 and paper
 
@@ -26,7 +26,7 @@ and paper
 > Xuanlong QIN, Tony TAM 
 > Social Science Computer Review, 2025
 
-Paper link: [link](https://journals.sagepub.com/doi/10.1177/08944393261437640)
+Paper link: [link](https://journals.sagepub.com/doi/10.1177/08944393261437640); Repo link: [link](https://github.com/XuanlongQ/Integrating_SCM_SD)
 
 ---
 
